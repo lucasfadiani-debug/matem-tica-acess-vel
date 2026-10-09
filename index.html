@@ -1,0 +1,412 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Plataforma de matemática básica acessível, com aulas escritas e exercícios interativos."
+    >
+
+    <meta name="theme-color" content="#f6f8fc">
+
+    <title>Matemática Acessível | Aprenda passo a passo</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- CABEÇALHO E NAVEGAÇÃO -->
+    <header class="cabecalho">
+        <div class="container cabecalho-conteudo">
+
+            <a class="marca" href="#inicio" aria-label="Página inicial">
+                <span class="marca-simbolo" aria-hidden="true">∑</span>
+                <span class="marca-texto">
+                    Matemática <strong>Acessível</strong>
+                </span>
+            </a>
+
+            <nav class="navegacao" aria-label="Navegação principal">
+                <a href="#inicio">Início</a>
+                <a href="#aprendizado">Aprender</a>
+                <a href="#exercicios">Exercícios</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- APRESENTAÇÃO -->
+        <section class="inicio" id="inicio">
+            <div class="container inicio-grade">
+
+                <div class="inicio-conteudo">
+                    <span class="etiqueta">EDUCAÇÃO ACESSÍVEL</span>
+
+                    <h1>
+                        Aprenda matemática
+                        <span>passo a passo.</span>
+                    </h1>
+
+                    <p class="inicio-descricao">
+                        Entenda as operações matemáticas com explicações
+                        escritas, exemplos práticos e exercícios interativos.
+                        Aprenda no seu ritmo, sem depender de áudio.
+                    </p>
+
+                    <div class="inicio-acoes">
+                        <a href="#aprendizado" class="botao botao-principal">
+                            Começar a aprender
+                            <span aria-hidden="true">→</span>
+                        </a>
+
+                        <a href="#como-funciona" class="botao botao-secundario">
+                            Como funciona
+                        </a>
+                    </div>
+
+                    <ul class="beneficios">
+                        <li>✓ Explicações escritas</li>
+                        <li>✓ Exercícios práticos</li>
+                        <li>✓ Acesso em qualquer tela</li>
+                    </ul>
+                </div>
+
+                <div class="inicio-visual" aria-hidden="true">
+                    <div class="cartao-exemplo">
+                        <span class="cartao-exemplo-titulo">
+                            EXEMPLO MATEMÁTICO
+                        </span>
+
+                        <div class="conta-destaque">12 + 8 = 20</div>
+
+                        <div class="grupos-numeros">
+                            <div class="grupo grupo-azul">
+                                <span>12</span>
+                                <small>primeiro número</small>
+                            </div>
+
+                            <span class="operador-visual">+</span>
+
+                            <div class="grupo grupo-verde">
+                                <span>8</span>
+                                <small>segundo número</small>
+                            </div>
+                        </div>
+
+                        <div class="resultado-visual">
+                            <span aria-hidden="true">✓</span>
+                            Resultado: 20
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ÁREA DE APRENDIZAGEM -->
+        <section class="secao aprendizado" id="aprendizado">
+            <div class="container">
+
+                <div class="cabecalho-secao">
+                    <span class="etiqueta">MÓDULOS DE ESTUDO</span>
+                    <h2>Escolha o que deseja aprender</h2>
+                    <p>
+                        Comece por qualquer operação e estude
+                        cada conteúdo com calma.
+                    </p>
+                </div>
+
+                <div class="grade-modulos">
+
+                    <button
+                        class="modulo modulo-adicao"
+                        type="button"
+                        data-operacao="adicao"
+                        aria-controls="area-aula"
+                    >
+                        <span class="modulo-icone" aria-hidden="true">+</span>
+                        <span class="modulo-numero">MÓDULO 01</span>
+                        <span class="modulo-titulo">Adição</span>
+                        <span class="modulo-descricao">
+                            Aprenda a somar e juntar quantidades.
+                        </span>
+                        <span class="modulo-link">Abrir aula →</span>
+                    </button>
+
+                    <button
+                        class="modulo modulo-subtracao"
+                        type="button"
+                        data-operacao="subtracao"
+                        aria-controls="area-aula"
+                    >
+                        <span class="modulo-icone" aria-hidden="true">−</span>
+                        <span class="modulo-numero">MÓDULO 02</span>
+                        <span class="modulo-titulo">Subtração</span>
+                        <span class="modulo-descricao">
+                            Entenda como diminuir e comparar números.
+                        </span>
+                        <span class="modulo-link">Abrir aula →</span>
+                    </button>
+
+                    <button
+                        class="modulo modulo-multiplicacao"
+                        type="button"
+                        data-operacao="multiplicacao"
+                        aria-controls="area-aula"
+                    >
+                        <span class="modulo-icone" aria-hidden="true">×</span>
+                        <span class="modulo-numero">MÓDULO 03</span>
+                        <span class="modulo-titulo">Multiplicação</span>
+                        <span class="modulo-descricao">
+                            Descubra como somar grupos iguais.
+                        </span>
+                        <span class="modulo-link">Abrir aula →</span>
+                    </button>
+
+                    <button
+                        class="modulo modulo-divisao"
+                        type="button"
+                        data-operacao="divisao"
+                        aria-controls="area-aula"
+                    >
+                        <span class="modulo-icone" aria-hidden="true">÷</span>
+                        <span class="modulo-numero">MÓDULO 04</span>
+                        <span class="modulo-titulo">Divisão</span>
+                        <span class="modulo-descricao">
+                            Aprenda a repartir em partes iguais.
+                        </span>
+                        <span class="modulo-link">Abrir aula →</span>
+                    </button>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- COMO ESTUDAR -->
+        <section class="secao como-funciona" id="como-funciona">
+            <div class="container">
+
+                <div class="cabecalho-secao">
+                    <span class="etiqueta">MÉTODO DE APRENDIZAGEM</span>
+                    <h2>Aprenda em quatro etapas</h2>
+                    <p>
+                        Um processo organizado para ajudar
+                        você a compreender cada operação.
+                    </p>
+                </div>
+
+                <div class="grade-etapas">
+
+                    <article class="etapa">
+                        <span class="etapa-numero">01</span>
+                        <h3>Entenda</h3>
+                        <p>
+                            Leia uma explicação simples sobre
+                            o significado da operação.
+                        </p>
+                    </article>
+
+                    <article class="etapa">
+                        <span class="etapa-numero">02</span>
+                        <h3>Observe</h3>
+                        <p>
+                            Acompanhe um exemplo resolvido
+                            com cada etapa detalhada.
+                        </p>
+                    </article>
+
+                    <article class="etapa">
+                        <span class="etapa-numero">03</span>
+                        <h3>Pratique</h3>
+                        <p>
+                            Resolva exercícios e escolha
+                            suas próprias respostas.
+                        </p>
+                    </article>
+
+                    <article class="etapa">
+                        <span class="etapa-numero">04</span>
+                        <h3>Confira</h3>
+                        <p>
+                            Veja a correção e entenda
+                            como chegar ao resultado.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ÁREA DINÂMICA DAS AULAS -->
+        <section
+            class="secao area-aula"
+            id="area-aula"
+            aria-labelledby="titulo-aula"
+        >
+            <div class="container">
+
+                <div class="cabecalho-secao">
+                    <span class="etiqueta">SALA DE AULA</span>
+                    <h2 id="titulo-aula">Sua aula começa aqui</h2>
+                    <p id="descricao-aula">
+                        Selecione um módulo para visualizar
+                        a explicação e o exemplo resolvido.
+                    </p>
+                </div>
+
+                <div id="conteudo-aula" aria-live="polite">
+                    <div class="estado-vazio">
+                        <span aria-hidden="true">✏️</span>
+                        <h3>Escolha uma operação matemática</h3>
+                        <p>
+                            O conteúdo da aula aparecerá aqui,
+                            com explicações organizadas por etapa.
+                        </p>
+                        <a href="#aprendizado" class="botao botao-secundario">
+                            Ver módulos
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- EXERCÍCIOS -->
+        <section class="secao exercicios" id="exercicios">
+            <div class="container">
+
+                <div class="cabecalho-secao">
+                    <span class="etiqueta">PRATIQUE O QUE APRENDEU</span>
+                    <h2>Exercícios de matemática</h2>
+                    <p>
+                        Teste seus conhecimentos e receba
+                        correções explicadas por escrito.
+                    </p>
+                </div>
+
+                <div class="painel-exercicios">
+
+                    <div class="painel-exercicios-cabecalho">
+                        <div>
+                            <span class="etiqueta">SEU TREINO</span>
+                            <h3>Desafio matemático</h3>
+                        </div>
+
+                        <div class="pontuacao" aria-live="polite">
+                            <span>Pontuação</span>
+                            <strong id="pontuacao">0</strong>
+                        </div>
+                    </div>
+
+                    <div class="progresso">
+                        <div class="progresso-texto">
+                            <span id="contador-questao">Pronto para começar?</span>
+                            <span id="texto-progresso">0%</span>
+                        </div>
+
+                        <div
+                            class="progresso-trilho"
+                            id="progresso-trilho"
+                            role="progressbar"
+                            aria-label="Progresso dos exercícios"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                            aria-valuenow="0"
+                        >
+                            <div id="progresso-barra"></div>
+                        </div>
+                    </div>
+
+                    <div id="area-desafio" aria-live="polite">
+                        <p>
+                            Clique no botão para iniciar
+                            uma sequência de exercícios.
+                        </p>
+                    </div>
+
+                    <div id="feedback-desafio"
+                         class="feedback"
+                         role="status"
+                         aria-live="polite"></div>
+
+                    <div class="acoes-desafio">
+                        <button
+                            id="iniciar-desafio"
+                            class="botao botao-principal"
+                            type="button"
+                        >
+                            Começar exercícios →
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- COMPROMISSO COM ACESSIBILIDADE -->
+        <section class="secao acessibilidade">
+            <div class="container">
+                <div class="cartao-acessibilidade">
+
+                    <span class="acessibilidade-icone"
+                          aria-hidden="true">✓</span>
+
+                    <div>
+                        <h2>Aprendizado sem barreiras</h2>
+                        <p>
+                            Este site foi planejado para que as aulas,
+                            instruções e correções sejam compreendidas
+                            visualmente e por escrito. Não é necessário
+                            ouvir áudios para acompanhar os conteúdos.
+                        </p>
+
+                        <ul>
+                            <li>Conteúdo escrito e organizado</li>
+                            <li>Navegação por teclado</li>
+                            <li>Compatibilidade com telas pequenas</li>
+                            <li>Mensagens de acerto e erro por escrito</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+        <div class="container rodape-conteudo">
+
+            <a class="marca" href="#inicio">
+                <span class="marca-simbolo" aria-hidden="true">∑</span>
+                <span class="marca-texto">
+                    Matemática <strong>Acessível</strong>
+                </span>
+            </a>
+
+            <p>
+                Aprender matemática é para todos.
+            </p>
+
+            <a href="#inicio">Voltar ao início ↑</a>
+
+        </div>
+    </footer>
+
+</body>
+</html>
